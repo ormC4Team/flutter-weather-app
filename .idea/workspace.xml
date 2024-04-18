@@ -4,22 +4,7 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c290b64a-0d73-40b4-b677-7b51b786e8d6" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/lib/data/repository/location_repository_impl.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/data/repository/weather_repoisitory_impl.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/data/dto/location_dto.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/data/dto/location_dto.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/data/dto/weather_dto.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/data/dto/weather_dto.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/data/mapper/location_mapper.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/data/mapper/location_mapper.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/data/mapper/weather_mapper.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/data/mapper/weather_mapper.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/data/model/location.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/data/model/location.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/data/model/location.freezed.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/data/model/location.freezed.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/data/model/location.g.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/data/model/location.g.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/data/model/weather.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/data/model/weather.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/data/model/weather.freezed.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/data/model/weather.freezed.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/data/model/weather.g.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/data/model/weather.g.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/data/repository/location_repository.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/data/repository/location_repository.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/data/repository/weather_repository.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/data/repository/weather_repository.dart" afterDir="false" />
-    </list>
+    <list default="true" id="c290b64a-0d73-40b4-b677-7b51b786e8d6" name="Changes" comment="feat : DTO, Mapper 작성, Repository 수정 필요" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -86,6 +71,15 @@
       <option name="presentableId" value="Default" />
       <updated>1713425477233</updated>
     </task>
+    <task id="LOCAL-00001" summary="feat : DTO, Mapper 작성, Repository 수정 필요">
+      <option name="closed" value="true" />
+      <created>1713428773784</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1713428773784</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -93,5 +87,9 @@
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
     </layout>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="feat : DTO, Mapper 작성, Repository 수정 필요" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat : DTO, Mapper 작성, Repository 수정 필요" />
   </component>
 </project>
