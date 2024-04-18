@@ -24,10 +24,10 @@ class WeatherDto {
     double generationtimeMs;
     String timezoneAbbreviation;
     String timezone;
-    int latitude;
+    num latitude;
     int utcOffsetSeconds;
     Hourly hourly;
-    int longitude;
+    num longitude;
 
     factory WeatherDto.fromJson(Map<dynamic, dynamic> json) => WeatherDto(
         elevation: json["elevation"],
