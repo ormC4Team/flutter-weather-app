@@ -8,10 +8,14 @@ part of 'location.dart';
 
 _$LocationImpl _$$LocationImplFromJson(Map<String, dynamic> json) =>
     _$LocationImpl(
-      cityName: json['cityName'] as String,
+      name: json['name'] as String,
+      latitude: (json['latitude'] as num).toDouble(),
+      longitude: (json['longitude'] as num).toDouble(),
     );
 
 Map<String, dynamic> _$$LocationImplToJson(_$LocationImpl instance) =>
     <String, dynamic>{
-      'cityName': instance.cityName,
+      'name': instance.name,
+      'latitude': instance.latitude,
+      'longitude': instance.longitude,
     };

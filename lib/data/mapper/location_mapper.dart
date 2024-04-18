@@ -1,10 +1,13 @@
-import 'package:flutter_weather_app/data/dto/location_dto.dart';
-import 'package:flutter_weather_app/data/model/location.dart';
+import '../dto/location_dto.dart';
+import '../model/location.dart';
 
-extension LocationMapper on LocationDto {
-  Location toWeather() {
+extension ToLocation on Results {
+  Location toLocation() {
     return Location(
-      cityName: results.map((e) => e.name),
+      // 모델클래스필드명:dto필드명 ?? '',
+      name: name ?? '',
+      latitude: latitude ?? 0,
+      longitude: longitude ?? 0,
     );
   }
 }
