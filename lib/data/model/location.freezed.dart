@@ -23,6 +23,7 @@ mixin _$Location {
   String get name => throw _privateConstructorUsedError;
   double get latitude => throw _privateConstructorUsedError;
   double get longitude => throw _privateConstructorUsedError;
+  String get country => throw _privateConstructorUsedError;
 
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
@@ -35,7 +36,7 @@ abstract class $LocationCopyWith<$Res> {
   factory $LocationCopyWith(Location value, $Res Function(Location) then) =
       _$LocationCopyWithImpl<$Res, Location>;
   @useResult
-  $Res call({String name, double latitude, double longitude});
+  $Res call({String name, double latitude, double longitude, String country});
 }
 
 /// @nodoc
@@ -54,6 +55,7 @@ class _$LocationCopyWithImpl<$Res, $Val extends Location>
     Object? name = null,
     Object? latitude = null,
     Object? longitude = null,
+    Object? country = null,
   }) {
     return _then(_value.copyWith(
       name: null == name
@@ -68,6 +70,10 @@ class _$LocationCopyWithImpl<$Res, $Val extends Location>
           ? _value.longitude
           : longitude // ignore: cast_nullable_to_non_nullable
               as double,
+      country: null == country
+          ? _value.country
+          : country // ignore: cast_nullable_to_non_nullable
+              as String,
     ) as $Val);
   }
 }
@@ -80,7 +86,7 @@ abstract class _$$LocationImplCopyWith<$Res>
       __$$LocationImplCopyWithImpl<$Res>;
   @override
   @useResult
-  $Res call({String name, double latitude, double longitude});
+  $Res call({String name, double latitude, double longitude, String country});
 }
 
 /// @nodoc
@@ -97,6 +103,7 @@ class __$$LocationImplCopyWithImpl<$Res>
     Object? name = null,
     Object? latitude = null,
     Object? longitude = null,
+    Object? country = null,
   }) {
     return _then(_$LocationImpl(
       name: null == name
@@ -111,6 +118,10 @@ class __$$LocationImplCopyWithImpl<$Res>
           ? _value.longitude
           : longitude // ignore: cast_nullable_to_non_nullable
               as double,
+      country: null == country
+          ? _value.country
+          : country // ignore: cast_nullable_to_non_nullable
+              as String,
     ));
   }
 }
@@ -119,7 +130,10 @@ class __$$LocationImplCopyWithImpl<$Res>
 @JsonSerializable()
 class _$LocationImpl implements _Location {
   const _$LocationImpl(
-      {required this.name, required this.latitude, required this.longitude});
+      {required this.name,
+      required this.latitude,
+      required this.longitude,
+      required this.country});
 
   factory _$LocationImpl.fromJson(Map<String, dynamic> json) =>
       _$$LocationImplFromJson(json);
@@ -130,10 +144,12 @@ class _$LocationImpl implements _Location {
   final double latitude;
   @override
   final double longitude;
+  @override
+  final String country;
 
   @override
   String toString() {
-    return 'Location(name: $name, latitude: $latitude, longitude: $longitude)';
+    return 'Location(name: $name, latitude: $latitude, longitude: $longitude, country: $country)';
   }
 
   @override
@@ -145,12 +161,14 @@ class _$LocationImpl implements _Location {
             (identical(other.latitude, latitude) ||
                 other.latitude == latitude) &&
             (identical(other.longitude, longitude) ||
-                other.longitude == longitude));
+                other.longitude == longitude) &&
+            (identical(other.country, country) || other.country == country));
   }
 
   @JsonKey(ignore: true)
   @override
-  int get hashCode => Object.hash(runtimeType, name, latitude, longitude);
+  int get hashCode =>
+      Object.hash(runtimeType, name, latitude, longitude, country);
 
   @JsonKey(ignore: true)
   @override
@@ -170,7 +188,8 @@ abstract class _Location implements Location {
   const factory _Location(
       {required final String name,
       required final double latitude,
-      required final double longitude}) = _$LocationImpl;
+      required final double longitude,
+      required final String country}) = _$LocationImpl;
 
   factory _Location.fromJson(Map<String, dynamic> json) =
       _$LocationImpl.fromJson;
@@ -181,6 +200,8 @@ abstract class _Location implements Location {
   double get latitude;
   @override
   double get longitude;
+  @override
+  String get country;
   @override
   @JsonKey(ignore: true)
   _$$LocationImplCopyWith<_$LocationImpl> get copyWith =>

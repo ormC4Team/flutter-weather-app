@@ -10,7 +10,9 @@ class Location with _$Location {
     required String name,
     required double latitude,
     required double longitude,
+    required String country,
   }) = _Location;
 
-  factory Location.fromJson(Map<String, Object?> json) => _$LocationFromJson(json);
+  factory Location.fromJson(Map<String, Object?> json) =>
+      _$LocationFromJson(json);
 }

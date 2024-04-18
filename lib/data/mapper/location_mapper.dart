@@ -8,6 +8,7 @@ extension ToLocation on Results {
       name: name ?? '',
       latitude: latitude ?? 0,
       longitude: longitude ?? 0,
+      country: country ?? '',
     );
   }
 }
